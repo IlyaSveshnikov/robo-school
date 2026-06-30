@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Figma source (large binary — link to it from the README instead)
+*.fig
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,288 @@
+/* ============================================================
+   Tablet (<= 1085px)
+   ============================================================ */
+@media (max-width: 1085px) {
+    :root {
+        --container: 90%;
+    }
+
+    .navbar_links_list,
+    .phone_number {
+        display: none;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar_logo {
+        font-size: 22px;
+    }
+
+    .top_header {
+        padding-block: 14px;
+    }
+
+    /* Hero: stack text above the figure, no absolute hacks */
+    .hero {
+        min-height: auto;
+    }
+
+    /* Glow follows the figure, which is pinned to the bottom border */
+    .hero::before {
+        top: auto;
+        bottom: 230px;
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: 440px;
+        height: 440px;
+    }
+
+    .main_header {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        min-height: calc(100vh - 64px);
+        padding: 40px 0 0;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .course_block {
+        width: 100%;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Figure sticks to the bottom border of the hero */
+    .woman {
+        height: 420px;
+        order: 2;
+        margin-top: auto;
+    }
+
+    /* Grids -> 2 columns */
+    .about_digits {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .rewards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reward_card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    /* New sections -> 2 columns */
+    .program_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .how_steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 36px;
+    }
+
+    .how_step:not(:last-child)::after {
+        display: none;
+    }
+
+    .reviews_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .audience_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ============================================================
+   Small tablet / large phone (<= 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+    .about,
+    .stuff,
+    .products {
+        margin: 60px auto;
+    }
+
+    .rewards_content {
+        padding: 50px 0;
+    }
+
+    .section_title {
+        text-align: center;
+    }
+
+    .nav_elems {
+        display: none;
+    }
+
+    .program,
+    .how,
+    .faq,
+    .audience,
+    .partners {
+        margin: 60px auto;
+    }
+
+    /* Lab: stack photo above text */
+    .lab {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin: 60px auto;
+    }
+
+    .lab_media {
+        order: -1;
+    }
+
+    .lab_media::before {
+        display: none;
+    }
+
+    /* License card stacks */
+    .license_card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Footer: brand on top, two columns below */
+    .footer_top {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .footer_brand {
+        grid-column: 1 / -1;
+    }
+
+    .reviews_content {
+        padding: 50px 0;
+    }
+
+    .reviews_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faq_q {
+        font-size: 18px;
+    }
+
+    .products_cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 36px 0;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .sign_up {
+        background-color: var(--color-accent);
+        background-image: none;
+    }
+
+    .sign_up_ad_title {
+        max-width: none;
+    }
+
+    .sign_up_content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 32px 0;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .sign_up_inputs {
+        width: 100%;
+        text-align: left;
+    }
+
+    .footer_content {
+        text-align: center;
+    }
+
+    .footer_main {
+        flex-direction: column;
+        gap: 16px 0;
+    }
+
+    .footer_logo,
+    .footer_phone {
+        font-size: 22px;
+    }
+
+    /* Trainer modal stacks */
+    .modal_dialog {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 420px;
+    }
+
+    .modal_body {
+        text-align: center;
+    }
+}
+
+/* ============================================================
+   Phone (<= 560px)
+   ============================================================ */
+@media (max-width: 560px) {
+    .about_digits {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        text-align: left;
+    }
+
+    .rewards {
+        grid-template-columns: 1fr;
+    }
+
+    .reward_card:last-child {
+        grid-column: auto;
+    }
+
+    .program_grid,
+    .how_steps,
+    .audience_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer_top {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    #to_top {
+        right: 16px;
+        bottom: 16px;
+        width: 46px;
+        height: 46px;
+    }
+
+    .school_description {
+        padding-bottom: 32px;
+    }
+
+    .woman {
+        height: 340px;
+    }
+}

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ROBO SCHOOL — курсы робототехники для педагогов начальной школы</title>
+    <meta name="description" content="ROBO SCHOOL — курсы повышения квалификации по робототехнике и программированию для педагогов начальной школы. Удостоверение, методики и практика на базе R:ED LAB.">
+    <meta name="theme-color" content="#141024">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ROBO SCHOOL — курсы робототехники для педагогов">
+    <meta property="og:description" content="Курсы повышения квалификации по робототехнике и программированию для педагогов начальной школы.">
+    <meta property="og:image" content="images/woman.png">
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div id="progress_bar" aria-hidden="true"></div>
+
+    <!-- Mobile menu -->
+    <div id="mobile_menu">
+        <div class="close_btn">
+            <button class="icon_btn" id="close" aria-label="Закрыть меню">
+                <img src="images/close.png" alt="" width="44" height="44">
+            </button>
+        </div>
+        <nav class="mobile_links_list" id="mobile_list" aria-label="Мобильное меню">
+            <a href="#about" class="mobile_link">О<span class="dim">_</span>школе</a>
+            <a href="#program" class="mobile_link">Программа</a>
+            <a href="#trainers" class="mobile_link">Тренеры</a>
+            <a href="#reviews" class="mobile_link">Отзывы</a>
+            <a href="#price" class="mobile_link">Стоимость</a>
+        </nav>
+    </div>
+
+    <header class="site_header" id="site_header">
+        <div class="top_header container">
+            <a href="#top" class="navbar_logo">ROBO.SCHOOL</a>
+            <nav aria-label="Основное меню">
+                <ul class="navbar_links_list">
+                    <li class="navbar_link"><a href="#about" class="text_link">О школе</a></li>
+                    <li class="navbar_link"><a href="#program" class="text_link">Программа</a></li>
+                    <li class="navbar_link"><a href="#trainers" class="text_link">Тренеры</a></li>
+                    <li class="navbar_link"><a href="#reviews" class="text_link">Отзывы</a></li>
+                    <li class="navbar_link"><a href="#price" class="text_link">Стоимость</a></li>
+                </ul>
+            </nav>
+            <div class="phone_number">
+                <a href="tel:+78000001122" class="text_link">+7 800 000 11 22</a>
+            </div>
+            <div class="icons">
+                <a href="tel:+78000001122" aria-label="Позвонить">
+                    <img src="images/call.png" alt="" width="44" height="44">
+                </a>
+                <button class="icon_btn" id="menu_btn" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile_menu">
+                    <img src="images/menu.png" alt="" width="44" height="44">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="top">
+        <div class="main_header container">
+            <div class="course_block">
+                <h1 class="school_name reveal">ROBO SCHOOL</h1>
+                <p class="school_description reveal">
+                    Курсы повышения квалификации по робототехнике для педагогов начальной школы
+                </p>
+                <a href="#sign_up" class="reveal">
+                    <button class="sign_up_btn">Записаться на курс</button>
+                </a>
+            </div>
+            <img src="images/woman.png" alt="Преподаватель робототехники" width="783" height="918" class="woman">
+        </div>
+    </section>
+
+    <main>
+        <section class="about container" id="about">
+            <p class="about_text reveal">
+                <b>Robo School</b> — учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования
+            </p>
+            <div class="about_digits">
+                <div class="block_with_digit reveal">
+                    <span class="digit" data-target="10">0</span>
+                    <p class="digit_description">УМК по различным направлениям по робототехнике</p>
+                </div>
+                <div class="block_with_digit reveal">
+                    <span class="digit" data-target="20">0</span>
+                    <p class="digit_description">Школ, в которых запущена робототехника</p>
+                </div>
+                <div class="block_with_digit reveal">
+                    <span class="digit" data-target="100">0</span>
+                    <p class="digit_description">Педагогов прошедших курсы повышения квалификации</p>
+                </div>
+                <div class="block_with_digit reveal">
+                    <span class="digit" data-target="10000">0</span>
+                    <p class="digit_description">Обученных детей на базе собственных центров</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="audience container" id="audience">
+            <h2 class="section_title reveal">Для кого этот курс</h2>
+            <div class="audience_grid">
+                <article class="audience_card reveal">
+                    <div class="audience_icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                    </div>
+                    <h3 class="audience_title">Учителя начальной школы</h3>
+                    <p class="audience_desc">Хотите вести робототехнику и заинтересовать детей современными технологиями.</p>
+                </article>
+                <article class="audience_card reveal">
+                    <div class="audience_icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3 class="audience_title">Педагоги доп. образования</h3>
+                    <p class="audience_desc">Расширяете компетенции и запускаете кружки робототехники и программирования.</p>
+                </article>
+                <article class="audience_card reveal">
+                    <div class="audience_icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                    </div>
+                    <h3 class="audience_title">Методисты</h3>
+                    <p class="audience_desc">Разрабатываете образовательные программы и учебно-методические комплексы.</p>
+                </article>
+                <article class="audience_card reveal">
+                    <div class="audience_icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a8.38 8.38 0 0 1 13 0"/></svg>
+                    </div>
+                    <h3 class="audience_title">Студенты педвузов</h3>
+                    <p class="audience_desc">Начинаете карьеру и хотите выйти на рынок с востребованной специализацией.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="program container" id="program">
+            <h2 class="section_title reveal">Программа курса</h2>
+            <p class="program_lead reveal">8 модулей — от основ механики до собственного учебно-методического комплекса.</p>
+            <div class="program_grid">
+                <article class="program_card reveal">
+                    <span class="program_num">01</span>
+                    <h3 class="program_title">Основы робототехники</h3>
+                    <p class="program_desc">Механика, датчики, моторы и принципы работы образовательных конструкторов.</p>
+                </article>
+                <article class="program_card reveal">
+                    <span class="program_num">02</span>
+                    <h3 class="program_title">Конструирование роботов</h3>
+                    <p class="program_desc">Сборка моделей и работа с наборами LEGO, ТРИК и аналогами.</p>
+                </article>
+                <article class="program_card reveal">
+                    <span class="program_num">03</span>
+                    <h3 class="program_title">Блочное программирование</h3>
+                    <p class="program_desc">Scratch и визуальные среды: первые алгоритмы для детей 6–12 лет.</p>
+                </article>
+                <article class="program_card reveal">
+                    <span class="program_num">04</span>
+                    <h3 class="program_title">Алгоритмика и логика</h3>
+                    <p class="program_desc">Циклы, условия и переменные на понятных школьнику примерах.</p>
+                </article>
+                <article class="program_card reveal">
+                    <span class="program_num">05</span>
+                    <h3 class="program_title">Методика преподавания</h3>
+                    <p class="program_desc">Как удерживать внимание класса и выстраивать занятие по робототехнике.</p>
+                </article>
+                <article class="program_card reveal">
+                    <span class="program_num">06</span>
+                    <h3 class="program_title">Разработка УМК</h3>
+                    <p class="program_desc">Создание собственных учебно-методических комплексов и проектов.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="what_u_get">
+            <div class="rewards_content container">
+                <h2 class="section_title reveal">Что вы получите после курса</h2>
+                <div class="rewards">
+                    <article class="reward_card reveal">
+                        <div class="reward_icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                        </div>
+                        <h3 class="reward_name">Удостоверение</h3>
+                        <p class="reward_desc">Дающее право преподавать робототехнику для детей 6–12 лет в образовательных учреждениях</p>
+                    </article>
+                    <article class="reward_card reveal">
+                        <div class="reward_icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                        </div>
+                        <h3 class="reward_name">Знания</h3>
+                        <p class="reward_desc">По основам разработки учебно-методических комплексов по робототехнике и программированию</p>
+                    </article>
+                    <article class="reward_card reveal">
+                        <div class="reward_icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3 class="reward_name">Практику</h3>
+                        <p class="reward_desc">Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в офлайн или онлайн формате)</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="how container" id="how">
+            <h2 class="section_title reveal">Как проходит обучение</h2>
+            <ol class="how_steps">
+                <li class="how_step reveal">
+                    <span class="how_num">1</span>
+                    <h3 class="how_title">Заявка</h3>
+                    <p class="how_desc">Оставляете заявку — мы помогаем выбрать подходящий пакет и формат.</p>
+                </li>
+                <li class="how_step reveal">
+                    <span class="how_num">2</span>
+                    <h3 class="how_title">Обучение</h3>
+                    <p class="how_desc">Лекции и материалы в онлайне, которые проходите в удобном темпе.</p>
+                </li>
+                <li class="how_step reveal">
+                    <span class="how_num">3</span>
+                    <h3 class="how_title">Практика</h3>
+                    <p class="how_desc">Отрабатываете преподавание на базе R:ED LAB — офлайн или онлайн.</p>
+                </li>
+                <li class="how_step reveal">
+                    <span class="how_num">4</span>
+                    <h3 class="how_title">Удостоверение</h3>
+                    <p class="how_desc">Получаете документ, дающий право преподавать робототехнику.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="lab container" id="lab">
+            <div class="lab_media reveal">
+                <img src="images/lab.jpg" alt="Лаборатория по сборке роботов R:ED LAB" width="1200" height="900" loading="lazy" class="lab_photo" onerror="this.closest('.lab_media').classList.add('no-image'); this.remove();">
+            </div>
+            <div class="lab_content reveal">
+                <h2 class="section_title">Практика в лаборатории R:ED LAB</h2>
+                <p class="lab_text">Теория закрепляется руками: вы собираете и программируете настоящих роботов на профессиональном оборудовании — ровно так, как потом будете вести занятия с детьми.</p>
+                <ul class="lab_list">
+                    <li>Реальные образовательные наборы и комплектующие</li>
+                    <li>Сборка и отладка роботов под руководством наставников</li>
+                    <li>Отработка готовых сценариев уроков</li>
+                </ul>
+                <a href="#sign_up"><button class="sign_up_btn">Записаться на практику</button></a>
+            </div>
+        </section>
+
+        <section class="stuff container" id="trainers">
+            <h2 class="section_title reveal">Профессиональные тренеры</h2>
+            <div class="trainers_cards" id="trainers_cards">
+                <article class="train_card"
+                    data-name="Ирина Лайм"
+                    data-role="преподаватель по робототехнике"
+                    data-bio="Более 8 лет преподаёт робототехнику детям и педагогам. Автор методических комплексов и наставник команд-победителей олимпиад по робототехнике.">
+                    <div class="trainer_photo_wrap">
+                        <img src="images/irina_laim.jpg" class="trainer_photo" alt="Ирина Лайм" width="360" height="500" loading="lazy">
+                    </div>
+                    <h3 class="trainer_name">Ирина Лайм</h3>
+                    <p class="about_trainer">преподаватель по робототехнике</p>
+                    <button class="more" type="button">Подробнее</button>
+                </article>
+                <article class="train_card"
+                    data-name="Марина Орлова"
+                    data-role="преподаватель по робототехнике"
+                    data-bio="Инженер-педагог, специализируется на образовательной робототехнике для начальной школы. Разрабатывает программы курсов повышения квалификации.">
+                    <div class="trainer_photo_wrap">
+                        <img src="images/marina_orlova.jpg" class="trainer_photo" alt="Марина Орлова" width="360" height="500" loading="lazy">
+                    </div>
+                    <h3 class="trainer_name">Марина Орлова</h3>
+                    <p class="about_trainer">преподаватель по робототехнике</p>
+                    <button class="more" type="button">Подробнее</button>
+                </article>
+                <article class="train_card"
+                    data-name="Максим Петров"
+                    data-role="преподаватель по программированию"
+                    data-bio="Разработчик и преподаватель программирования. Учит педагогов основам Scratch, Python и алгоритмики для работы с детьми 6–12 лет.">
+                    <div class="trainer_photo_wrap">
+                        <img src="images/maksim_petrov.jpg" class="trainer_photo" alt="Максим Петров" width="360" height="500" loading="lazy">
+                    </div>
+                    <h3 class="trainer_name">Максим Петров</h3>
+                    <p class="about_trainer">преподаватель по программированию</p>
+                    <button class="more" type="button">Подробнее</button>
+                </article>
+                <article class="train_card"
+                    data-name="Константин Назаров"
+                    data-role="преподаватель по робототехнике"
+                    data-bio="Эксперт по образовательным наборам и соревновательной робототехнике. Ведёт практические интенсивы на базе R:ED LAB.">
+                    <div class="trainer_photo_wrap">
+                        <img src="images/const_nazarov.jpg" class="trainer_photo" alt="Константин Назаров" width="360" height="500" loading="lazy">
+                    </div>
+                    <h3 class="trainer_name">Константин Назаров</h3>
+                    <p class="about_trainer">преподаватель по робототехнике</p>
+                    <button class="more" type="button">Подробнее</button>
+                </article>
+                <article class="train_card"
+                    data-name="Лиза Весенняя"
+                    data-role="преподаватель по программированию"
+                    data-bio="Преподаватель программирования и методист. Помогает учителям выстраивать понятные и увлекательные занятия для младших школьников.">
+                    <div class="trainer_photo_wrap">
+                        <img src="images/liza_vesennyaya.jpg" class="trainer_photo" alt="Лиза Весенняя" width="360" height="500" loading="lazy">
+                    </div>
+                    <h3 class="trainer_name">Лиза Весенняя</h3>
+                    <p class="about_trainer">преподаватель по программированию</p>
+                    <button class="more" type="button">Подробнее</button>
+                </article>
+            </div>
+            <div class="nav_elems">
+                <div class="nav_btns">
+                    <button class="nav_btn" id="prev" type="button" aria-label="Предыдущие тренеры">
+                        <img src="images/left_arrow.svg" alt="" width="40" height="40">
+                    </button>
+                    <button class="nav_btn" id="next" type="button" aria-label="Следующие тренеры">
+                        <img src="images/right_arrow.svg" alt="" width="40" height="40">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <div class="reviews_content container">
+                <h2 class="section_title reveal">Отзывы выпускников</h2>
+                <div class="reviews_grid">
+                    <figure class="review_card reveal">
+                        <span class="review_quote" aria-hidden="true">“</span>
+                        <blockquote class="review_text">После курса запустила кружок робототехники в своей школе. Методички и поддержка кураторов сэкономили мне месяцы подготовки.</blockquote>
+                        <figcaption class="review_author">
+                            <span class="review_name">Елена Соколова</span>
+                            <span class="review_role">учитель начальных классов, Казань</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="review_card reveal">
+                        <span class="review_quote" aria-hidden="true">“</span>
+                        <blockquote class="review_text">Практика на базе R:ED LAB — это бесценно. Пришёл с нуля, а ушёл с готовыми занятиями и уверенностью у доски.</blockquote>
+                        <figcaption class="review_author">
+                            <span class="review_name">Дмитрий Власов</span>
+                            <span class="review_role">педагог доп. образования, Самара</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="review_card reveal">
+                        <span class="review_quote" aria-hidden="true">“</span>
+                        <blockquote class="review_text">Удобный онлайн-формат: проходила в удобном темпе между уроками. Удостоверение получила официальное — администрация довольна.</blockquote>
+                        <figcaption class="review_author">
+                            <span class="review_name">Марина Гусева</span>
+                            <span class="review_role">учитель информатики, Екатеринбург</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners container" id="partners">
+            <h2 class="section_title reveal">Партнёры и лицензия</h2>
+            <div class="partners_logos reveal">
+                <span class="partner_logo">ЛИЦЕЙ №1</span>
+                <span class="partner_logo">ГИМНАЗИЯ 5</span>
+                <span class="partner_logo">R:ED&nbsp;LAB</span>
+                <span class="partner_logo">ТЕХНОПАРК</span>
+                <span class="partner_logo">КВАНТОРИУМ</span>
+            </div>
+            <div class="license_card reveal">
+                <div class="license_icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></svg>
+                </div>
+                <div>
+                    <h3 class="license_title">Лицензия на образовательную деятельность</h3>
+                    <p class="license_text">№&nbsp;Л035-00000-00/00000000 — выдана Министерством образования. Удостоверения о повышении квалификации вносятся в ФИС&nbsp;ФРДО.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="products container" id="price">
+            <h2 class="section_title reveal">Выберите нужный пакет</h2>
+            <div class="products_cards">
+                <article class="product product--featured reveal">
+                    <span class="product_badge">Популярный</span>
+                    <h3 class="prod_title">– PRO –</h3>
+                    <div>
+                        <p class="prod_price">20.000 ₽</p>
+                        <p class="prod_desc">УМК по робототехнике и программированию</p>
+                    </div>
+                    <a href="#sign_up"><button class="sign_up_btn">Оставить заявку</button></a>
+                </article>
+                <article class="product reveal">
+                    <h3 class="prod_title">– ROBO –</h3>
+                    <div>
+                        <p class="prod_price">15.000 ₽</p>
+                        <p class="prod_desc">УМК по робототехнике</p>
+                    </div>
+                    <a href="#sign_up"><button class="sign_up_btn">Оставить заявку</button></a>
+                </article>
+                <article class="product reveal">
+                    <h3 class="prod_title">– PROG –</h3>
+                    <div>
+                        <p class="prod_price">10.000 ₽</p>
+                        <p class="prod_desc">УМК по программированию</p>
+                    </div>
+                    <a href="#sign_up"><button class="sign_up_btn">Оставить заявку</button></a>
+                </article>
+            </div>
+
+            <div class="compare_wrap reveal">
+                <table class="compare">
+                    <caption class="visually_hidden">Сравнение возможностей тарифов PROG, ROBO и PRO</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Возможности</th>
+                            <th scope="col">PROG</th>
+                            <th scope="col">ROBO</th>
+                            <th scope="col" class="compare_featured">PRO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">УМК по программированию</th>
+                            <td class="yes">✓</td>
+                            <td class="no">—</td>
+                            <td class="yes compare_featured">✓</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">УМК по робототехнике</th>
+                            <td class="no">—</td>
+                            <td class="yes">✓</td>
+                            <td class="yes compare_featured">✓</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Доступ ко всем материалам</th>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                            <td class="yes compare_featured">✓</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Практика на базе R:ED LAB</th>
+                            <td class="no">—</td>
+                            <td class="yes">✓</td>
+                            <td class="yes compare_featured">✓</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Удостоверение о повышении квалификации</th>
+                            <td class="yes">✓</td>
+                            <td class="yes">✓</td>
+                            <td class="yes compare_featured">✓</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Персональная поддержка куратора</th>
+                            <td class="no">—</td>
+                            <td class="no">—</td>
+                            <td class="yes compare_featured">✓</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Обновления программы на год</th>
+                            <td class="no">—</td>
+                            <td class="no">—</td>
+                            <td class="yes compare_featured">✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="faq container" id="faq">
+            <h2 class="section_title reveal">Частые вопросы</h2>
+            <div class="faq_list">
+                <div class="faq_item reveal">
+                    <button class="faq_q" type="button" aria-expanded="false" aria-controls="faq1">
+                        <span>Нужен ли опыт в робототехнике, чтобы начать?</span>
+                        <span class="faq_icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq_a" id="faq1" role="region">
+                        <p>Нет. Курс рассчитан на педагогов без технического бэкграунда — мы начинаем с самых основ и доводим до уверенного преподавания.</p>
+                    </div>
+                </div>
+                <div class="faq_item reveal">
+                    <button class="faq_q" type="button" aria-expanded="false" aria-controls="faq2">
+                        <span>Сколько длится обучение?</span>
+                        <span class="faq_icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq_a" id="faq2" role="region">
+                        <p>В среднем 1–2 месяца. Формат гибкий: вы проходите модули в удобном темпе между основной работой.</p>
+                    </div>
+                </div>
+                <div class="faq_item reveal">
+                    <button class="faq_q" type="button" aria-expanded="false" aria-controls="faq3">
+                        <span>Какой документ я получу после курса?</span>
+                        <span class="faq_icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq_a" id="faq3" role="region">
+                        <p>Удостоверение о повышении квалификации, дающее право преподавать робототехнику детям 6–12 лет в образовательных учреждениях.</p>
+                    </div>
+                </div>
+                <div class="faq_item reveal">
+                    <button class="faq_q" type="button" aria-expanded="false" aria-controls="faq4">
+                        <span>Обучение проходит онлайн или офлайн?</span>
+                        <span class="faq_icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq_a" id="faq4" role="region">
+                        <p>Теория — полностью онлайн. Практику можно пройти как на базе R:ED LAB офлайн, так и в онлайн-формате.</p>
+                    </div>
+                </div>
+                <div class="faq_item reveal">
+                    <button class="faq_q" type="button" aria-expanded="false" aria-controls="faq5">
+                        <span>Нужно ли своё оборудование?</span>
+                        <span class="faq_icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="faq_a" id="faq5" role="region">
+                        <p>Нет. Все необходимые материалы и доступ к оборудованию предоставляются в рамках курса и практики.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sign_up" id="sign_up">
+            <div class="sign_up_content container">
+                <div class="sign_up_ad_block">
+                    <h2 class="sign_up_ad_title">Запишитесь на курс со скидкой 10%</h2>
+                    <p class="sign_up_ad_text">Количество мест по акции ограничено</p>
+                </div>
+                <form class="sign_up_inputs" id="sign_up_form" novalidate>
+                    <div class="field">
+                        <label class="visually_hidden" for="name">Имя</label>
+                        <input type="text" id="name" name="name" class="inp" placeholder="Имя" required minlength="2">
+                        <span class="field_error" data-for="name"></span>
+                    </div>
+                    <div class="field">
+                        <label class="visually_hidden" for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" class="inp" placeholder="Телефон" required>
+                        <span class="field_error" data-for="phone"></span>
+                    </div>
+                    <div class="field">
+                        <label class="visually_hidden" for="email">E-mail</label>
+                        <input type="email" id="email" name="email" class="inp" placeholder="E-mail" required>
+                        <span class="field_error" data-for="email"></span>
+                    </div>
+                    <button class="confirm_btn" type="submit">Оформить заявку</button>
+                    <p class="form_success" id="form_success" hidden>✓ Заявка отправлена! Мы свяжемся с вами в ближайшее время.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_content container">
+            <div class="footer_top">
+                <div class="footer_brand">
+                    <p class="footer_logo">ROBO.SCHOOL</p>
+                    <p class="footer_tagline">Готовим педагогов будущего к преподаванию робототехники и программирования.</p>
+                    <div class="footer_socials">
+                        <a href="#" class="social_link" aria-label="ВКонтакте">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.16 17.3c-5.46 0-8.94-3.84-9.08-10.2h2.77c.1 4.67 2.23 6.66 3.86 7.07V7.1h2.64v3.96c1.58-.17 3.24-2 3.8-3.96h2.6c-.43 2.4-2.2 4.23-3.46 4.99 1.26.62 3.28 2.22 4.06 5.21h-2.86c-.6-1.92-2.12-3.4-4.14-3.6v3.6h-.29z"/></svg>
+                        </a>
+                        <a href="#" class="social_link" aria-label="Telegram">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.6 18.9 19c-.23 1.02-.84 1.27-1.7.79l-4.7-3.46-2.27 2.18c-.25.25-.46.46-.94.46l.34-4.78L18.4 6.3c.38-.34-.08-.53-.59-.19L7.05 13.07l-4.66-1.46c-1.01-.32-1.03-1.01.21-1.5L20.64 3.2c.84-.31 1.58.2 1.3 1.4z"/></svg>
+                        </a>
+                        <a href="#" class="social_link" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.2-.4-4.74a2.49 2.49 0 0 0-1.75-1.76C19.31 5.1 12 5.1 12 5.1s-7.31 0-8.85.4A2.49 2.49 0 0 0 1.4 7.26C1 8.8 1 12 1 12s0 3.2.4 4.74a2.49 2.49 0 0 0 1.75 1.76c1.54.4 8.85.4 8.85.4s7.31 0 8.85-.4a2.49 2.49 0 0 0 1.75-1.76C23 15.2 23 12 23 12zm-13 3.05v-6.1L15.2 12 10 15.05z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <nav class="footer_col" aria-label="Навигация в подвале">
+                    <h3 class="footer_heading">Навигация</h3>
+                    <ul class="footer_links">
+                        <li><a href="#about">О школе</a></li>
+                        <li><a href="#program">Программа</a></li>
+                        <li><a href="#trainers">Тренеры</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#price">Стоимость</a></li>
+                    </ul>
+                </nav>
+                <div class="footer_col">
+                    <h3 class="footer_heading">Контакты</h3>
+                    <ul class="footer_links">
+                        <li><a href="tel:+78000001122">+7 800 000 11 22</a></li>
+                        <li><a href="mailto:info@robo.school">info@robo.school</a></li>
+                        <li class="footer_address">г. Москва, ул. Робототехников, 1</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p class="footer_subtitle">© 2026 ROBO.SCHOOL. Все права защищены.</p>
+                <a href="#" class="footer_policy">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Trainer modal -->
+    <div class="modal" id="trainer_modal" hidden>
+        <div class="modal_overlay" data-close></div>
+        <div class="modal_dialog" role="dialog" aria-modal="true" aria-labelledby="modal_name">
+            <button class="modal_close" type="button" aria-label="Закрыть" data-close>&times;</button>
+            <img class="modal_photo" id="modal_photo" src="" alt="" width="360" height="500">
+            <div class="modal_body">
+                <h3 class="modal_name" id="modal_name"></h3>
+                <p class="modal_role" id="modal_role"></p>
+                <p class="modal_bio" id="modal_bio"></p>
+            </div>
+        </div>
+    </div>
+
+    <button id="to_top" type="button" aria-label="Наверх">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
